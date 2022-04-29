@@ -1,5 +1,11 @@
 import UIKit
 
+// var
+// let
+// type Annottations
+// Bool
+// Tuples
+
 var str: String = "Hello, playground"
 
 let str2: Int = 111
