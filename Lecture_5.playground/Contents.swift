@@ -48,28 +48,3 @@ for (index, name) in myNames.enumerated(){
 // 1 Park ...
 
 
-// Set
-
-var names = Set<String>()
-names.insert("Kim")
-names.insert("Lee")
-names.insert("Park")
-names.insert("Park") // 값이 중첩되지 않음
-
-var num1: Set = [1, 2, 3, 4, 5]
-
-var num2: Set = [4, 5, 6, 7, 8]
-
-// 교집합
-num1.intersection(num2)
-
-// 합집합
-num1.union(num2)
-
-// 합집합 - 교집합 (대칭차집합)
-num1.symmetricDifference(num2)
-
-// 여집합
-num1.subtracting(num2)
-
-
