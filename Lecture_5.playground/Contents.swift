@@ -73,3 +73,23 @@ num1.symmetricDifference(num2)
 num1.subtracting(num2)
 
 
+// Dictionary
+// Key <-> Value
+
+var namesOfStreet = [String : Any ]()
+
+namesOfStreet["302ro"] = "1st Street"
+namesOfStreet["303ro"] = "2nd Street"
+namesOfStreet["304ro"] = 3
+
+namesOfStreet.keys
+namesOfStreet.values
+namesOfStreet["303ro"]
+
+var namesOfStreet2 = ["a" : 1, "b" : 2, "c" : 3]
+
+namesOfStreet2
+
+for dic in namesOfStreet2 {
+    print(dic)
+}
