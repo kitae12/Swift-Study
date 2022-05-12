@@ -57,7 +57,7 @@ default:
 }
 
 
-let f = 99
+let f = 101
 
 switch f {
 case 0...50:
@@ -70,5 +70,5 @@ case 100:
     print("grade : A")
     
 default:
-    print("other")
+    print("0~100 사이의 값을 입력하세요.")
 }
