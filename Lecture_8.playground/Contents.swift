@@ -91,3 +91,13 @@ find(findString: "a", condition: startSomeText)
 find(findString: "a", condition: containsSomeText)
 
     
+var nicknames = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+
+// sort
+nicknames.sort {(lhs, rhs) -> Bool in
+    return lhs < rhs
+}
+// nicknames.sort(by: { $0 < $1} )
+// nicknames.sort() { $0 < $1 }
+// nicknames.sort{ $0 < $1 }
+// nicknames.sort(by: < )
