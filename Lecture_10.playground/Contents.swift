@@ -47,5 +47,51 @@ myInfo2.age
 myInfo3.age
 
 
+// Class - Inheritance
+// 상속
+/*
+class Soccer {
+    var homeScore = 0
+    var awayScore = 0
+    func presentScore() -> String {
+        return homeScore.description + " : " + awayScore.description
+    }
+}
+
+class Baseball {
+    var homeScore = 0
+    var awayScore = 0
+    func presentScore() -> String {
+        return homeScore.description + " : " + awayScore.description
+    }
+}
+*/
+
+class GameInfo{
+    var homeScore = 0
+    var awayScore = 0
+    func presentScore() -> String { // final 붙이면 override 사용 불가
+        return homeScore.description + " : " + awayScore.description
+    }
+}
+
+class Soccer: GameInfo {
+
+}
+
+class Baseball: GameInfo {
+    override func presentScore() -> String {
+        return homeScore.description + " 대 " + awayScore.description
+    }
+}
 
 
+let soccer = Soccer()
+soccer.awayScore = 1
+soccer.homeScore = 2
+soccer.presentScore()
+
+let baseball = Baseball()
+baseball.awayScore = 12
+baseball.homeScore = 13
+baseball.presentScore()
