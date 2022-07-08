@@ -1,7 +1,6 @@
 import UIKit
 
 // Properties
-//
 
 class MyInfo {
     
