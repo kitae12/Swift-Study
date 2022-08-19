@@ -43,3 +43,39 @@ var myInfo1 = MyInfo(n: "Kim", id: "abcd")
 
 myInfo1.myId
 myInfo1.name
+
+
+
+
+import UIkit
+
+// Deinitialization
+
+var a: Int? = 10
+a = nil
+
+class Game {
+    var score = 0
+    var name = ""
+    var round: Round?
+    
+    init(){
+        print("game init")
+    }
+    deinit {
+        print("game deinit")
+    }
+             
+}
+
+class Round {
+    var gameInfo = ""
+    var lastRound = 10
+    var roundTime = 20
+}
+
+var game: Game? = Game()
+var round: Round? = Round()
+round?.gameInfo = game
+game?.round = round
+
