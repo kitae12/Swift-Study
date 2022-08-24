@@ -2,7 +2,6 @@ import UIKit
 
 
 // Initializer
-//
 
 class MyInfo {
     var name: String
